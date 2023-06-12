@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone de pinterest por stephany</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    }
+    .menuBar{
+    position: fixed;
+    background-color:white;
+    height: 50px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.Iniciobutton{
+    width: 60px;
+    height: 40px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 20px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+
+}
+.Explorarbutton{
+    width: 60px;
+    height: 40px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 20px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+
+}
+.Crearbutton{
+    width: 60px;
+    height: 40px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 20px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+}
+.search{
+    background-color: rgb(206, 206, 193);
+    height: 35px;
+    width: 800px;
+    border: none;
+    margin: 6px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.bell{
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border: 35px;
+    margin: 0,5px;
+    border-radius: 10px;
+    padding: 2px;
+    position: left 200px;
+    
+}
+.message{
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border: 35px;
+    margin: 0,5px;
+    border-radius: 10px;
+    padding: 2px;
+}
+.profile{
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border: 35px;
+    margin: 0,5px;
+    border-radius: 10px;
+    padding: 2px;
+   
+}
+
+.container{
+    flex: 1;
+    height: auto;
+    width: auto;
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-auto-rows: 10px;
+
+}
+.column{
+    flex: 10%;
+    padding: 10px;
+
+}
+.column img{
+    margin-top: 0;
+    border-radius: 20px;
+}
+.centrado#padding {
+    padding-bottom: 0px;
+}
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+}
+@media (max-width: 600px){
+    .menuBar{
+    display: flex 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+<div class="menuBar">
+    <img class="name"width="50px" height="50px" src="logo.png"/>
+    <div class="Iniciobutton">Inicio</div>
+    <div class="Explorarbutton">Explorar</div>
+    <div class="Crearbutton">Crear<img class="name"width="20px" height="20px" src="Arrow final.svg"></div>
+    <div class="centrado" id="padding">
+</div>
+    <input type="buscar" class="search" placeholder="search">
+    <div class="bell"><img class="bell"width="20px" height="20px"src="bell final.jpg"style=float:right></div>
+    <div class="message"><img class="message"width="20px" height="20px" src="message final.jpg"/></div>
+    <div class="profile"><img class="profile"width="20px" height="20px" src="perfil.jpg"/></div>
+</div>
+<div class="container">
+    <div class="column">
+        <img src="photo 1.jpg" alt="photo 1"/>
+        <img src="photo 2.jpg" alt="photo 2"/>
+        <img src="photo 3.jpg" alt="photo 3"/>
+        <img src="photo 4.jpg" alt="photo 4"/>
+        <img src="photo 5.jpg" alt="photo 5"/>
+    </div>
+    <div class="column">
+        <img src="photo 6.jpg" alt="photo 6"/>
+        <img src="photo 7.jpg" alt="photo 7"/>
+        <img src="photo 8.jpg" alt="photo 8"/>
+        <img src="photo 9.jpg" alt="photo 9"/>
+        <img src="photo 10.jpg" alt="photo 10"/>
+    </div>
+    <div class="column">
+        <img src="photo 11.jpg" alt="photo 11"/>
+        <img src="photo 12.jpg" alt="photo 12"/>
+        <img src="photo 13.jpg" alt="photo 13"/>
+        <img src="photo 14.jpg" alt="photo 14"/>
+        <img src="photo 15.jpg" alt="photo 15"/>
+    </div>
+    <div class="column">
+        <img src="photo 16.jpg" alt="photo 16"/>
+        <img src="photo 17.jpg" alt="photo 17"/>
+        <img src="photo 18.jpg" alt="photo 18"/>
+        <img src="photo 19.jpg" alt="photo 19"/>
+        <img src="photo 20.jpg" alt="photo 20"/>
+    </div>
+   
+</div>
+</div>
+
+</body>
+</html>
